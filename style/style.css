@@ -24,6 +24,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+    width: 85%;
+    max-width: 100%;
+    margin: auto;
+}
+
 p {
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;  
@@ -32,33 +38,95 @@ p {
 header {
     display: flex;
     flex-direction: row;
-    width: 85%;
-    margin: auto;
+    max-width: 100%;
+    /* margin: auto; */
     justify-content: space-between;
-    background-color: grey;
+    /* background-color: grey; */
     border-bottom: 1px dashed gray;
 }
 
+header h1 {
+    font-family: ;
+}
 header nav {
     display: flex;
     justify-content: space-between;
-    width:35%;
+    width:20%;
     padding-top: 1%;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 header nav a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-decoration: none;
+    color: #3fb8af;
+}
+
+header nav a:hover{
+    color: #ebcf91;
+    text-decoration: wavy;
 }
 
 header nav #home{
     margin-right: 1%;
 }
 
-    #logo {
-        width: 5%;
-        align-content: center;
-
+#logo {
+    width: 30%;
+    flex-direction: row;
+    /* align-content: center; */
+    border-style: 1px solid black;
     }
+
+#top {
+    display: flex;
+    width: 100%;
+    margin: 1.5% 0;
+}
+
+#top img {
+    width:45%;
+    border-radius: 50%;
+}
+
+#top #text {
+    padding: 5% 3%;
+    width: 55%;
+}
+
+#top #text h2{
+    margin: 0 auto;
+    /* font-size: 13rem; */
+
+}
+
+#top #text p{
+    font-weight: bold;
+}
+
+
+#mid {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 1.5% 0;
+}
+
+#mid img {
+    width:45%;
+    border-radius: 50%;
+}
+
+#mid #lowerText {
+    padding: 5% 3%;
+    width: 55%;
+}
+
+#mid #lowerText p{
+    font-weight: bold;
+}
+
+#bottom {
+    background-image: image();
+}
