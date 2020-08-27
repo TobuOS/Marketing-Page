@@ -18,18 +18,24 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 62.5%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    max-width: 100%;
 }
 
 /* begin */
 
 body {
-    width: 85%;
+    width: 100%;
     max-width: 100%;
     margin: auto;
+    background:
+linear-gradient(135deg, #708090 21px, #ebcf91 22px, #ebcf91 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 21px, #ebcf91 22px, #ebcf91 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px;
+margin-top: 5%;
 }
 
 p {
@@ -41,12 +47,11 @@ p {
 header {
     display: flex;
     flex-direction: row;
-    /* max-width: 80%; */
     width: 100%;
-    /* margin: auto; */
     justify-content: space-between;
-    /* background-color: grey; */
-    border-bottom: 1px dashed gray;
+    background-color: white;
+    position: fixed;
+    top: 0;
 }
 
 header h1 {
@@ -58,6 +63,9 @@ header nav {
     width:20%;
     padding-top: 1%;
     font-size: 1.3rem;
+    color: grey;
+    font-weight:300;
+    font-display: ;
 }
 
 header nav a {
@@ -85,13 +93,20 @@ header nav #home{
 
 #top {
     display: flex;
-    width: 100%;
-    margin: 1.5% 0;
+    width: 80%;
+    margin: 1.5% auto;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2%;
+}
+
+#top:hover {
+    background-color: white;
 }
 
 #top img {
     width:45%;
-    border-radius: 50%;
+    
+
 }
 
 #top #text {
@@ -113,13 +128,18 @@ header nav #home{
 #mid {
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    margin: 1.5% 0;
+    width: 80%;
+    margin: 1.5% auto;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2%;
+}
+
+#mid:hover {
+        background-color: white;
 }
 
 #mid img {
     width:45%;
-    border-radius: 50%;
 }
 
 #mid #lowerText {
@@ -132,8 +152,10 @@ header nav #home{
 }
 
 #bottom {
-    background-image: url('/assets/bokeh-2990426_640.jpg');
+    background-image: url('/assets/lined-paper-1280548_1280.jpg');
     background-position: center;
+    width: 80%;
+    margin: 1.5% auto;
     background-size: cover;
     display: flex;
     align-content: center;
@@ -147,15 +169,29 @@ header nav #home{
 }
 
 footer {
-    width: 100%;
     display: flex;
-    flex-flow: column;
-    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
 }
 
 footer nav {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    width:20%;
+    padding-top: 1%;
+    font-size: 1.3rem;
+    color: grey;
+    font-weight:300;
+}
 
+footer nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #3fb8af;
 }
 
 /* about page css below this line */
@@ -179,6 +215,50 @@ footer nav {
 }  */
 
 #what {
-    display: inline-block;
+    display: block;
     margin-left: 50%;
+}
+
+#aboutBottomTitle {
+    /* display: inline-block; */
+    margin-left:50%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: black;
+
+}
+#aboutBottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+     border-style: 1px solid black;
+     margin: 0 auto;
+
+}
+
+#group1 {
+    margin: 0 auto;
+
+}
+
+#group3 {
+    margin-left:70%;
+}
+
+#aboutBottom .memberContainer {
+    width: 55%;
+    text-align: center;
+    background-color: white;
+    background-blend-mode: hue;
+    /* margin: 0 5%; */
+    padding: 0;
+    box-shadow: dimgrey;
+}
+
+.memberContainer p {
+    font-style: italic;
+    font-weight: bold;
 }
