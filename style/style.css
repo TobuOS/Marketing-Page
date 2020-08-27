@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	font: inherit;
+    vertical-align: baseline;
+    max-width: 100%;
+}
+
+/* begin */
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    background:
+linear-gradient(135deg, #708090 21px, #ebcf91 22px, #ebcf91 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 21px, #ebcf91 22px, #ebcf91 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px;
+margin-top: 5%;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;  
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width:20%;
+    padding-top: 1%;
+    font-size: 1.5rem;
+    color: grey;
+    font-weight:300;
+    font-display: ;
+}
+
+
+header nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #3fb8af;
+}
+
+header nav a:hover{
+    color: #ebcf91;
+    text-decoration: wavy;
+}
+
+header nav #home{
+    margin-right: 1%;
+}
+
+#logo {
+    width: 30%;
+    flex-direction: row;
+    border-style: 1px solid black;
+    }
+
+    a, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+#top {
+    display: flex;
+    width: 80%;
+    margin: 1.5% auto;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2%;
+    text-align: center;
+}
+
+#top:hover {
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(92, 92, 92);
+}
+
+#top img {
+    width:45%;
+}
+
+
+#top #text {
+    padding: 5% 3%;
+    width: 55%;
+}
+
+#top #text h1 {
+    font-size: 1.4rem;
+    color:black;
+    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px #3fb8af;
+}
+
+#top #text p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+#mid {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 1.5% auto;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2%;
+    text-align: center;
+}
+
+#mid:hover {
+        background-color: white;
+        box-shadow: 10px 10px 5px rgb(92, 92, 92);
+}
+
+#mid img {
+    width:45%;
+}
+
+#mid #lowerText {
+    padding: 5% 3%;
+    width: 55%;
+}
+
+#mid #lowerText h2 {
+    font-size: 1.4rem;
+    color:black;
+    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+}
+
+#mid #lowerText p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bottom {
+    background-position: center;
+    width: 80%;
+    margin: 1.5% auto;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.bottom:hover{
+    background-image: url('/assets/lined-paper-1280548_1280.jpg');
+    box-shadow: 10px 10px 5px rgb(92, 92, 92);
+}
+
+.bottom a {
+    margin: 0 auto;
+    padding: 3% 0;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+footer nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    width:20%;
+    padding-top: 1%;
+    font-size: 1.3rem;
+    color: grey;
+    font-weight:300;
+}
+
+footer nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #3fb8af;
+}
+
+/* about page css below this line */
+
+#aboutTop {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.575)
+}
+
+#aboutTop h2 {
+    font-size: 1.4rem;
+    color:black;
+    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px #3fb8af;
+    width: 20%;
+}
+
+ 
+#aboutTop:hover {
+    background-color:rgba(52, 121, 46, 0.575);
+    box-shadow: 10px 10px 5px rgb(92, 92, 92);
+}
+
+#aboutTop p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#aboutBottom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 80%;
+    max-width: 80%;
+    padding: 2%;
+    margin: 0 auto;
+    background-color:  rgba(255, 255, 255, 0.575);
+}
+
+#aboutBottom h3 {
+    text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+}
+
+#aboutBottom p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#aboutBottom:hover {
+    box-shadow: 10px 10px 5px rgb(92, 92, 92);
+}
+
+.mC {
+    text-align: center;
+    width: 30%;
+}
+
+#bottom {
+    margin-bottom: 4.3%;
+}
+
+#aboutFooter {
+    margin-bottom: 0;
+}
+
+/* media breakpoints */
+
+@media(max-width: 800px) {
+
+    header img {
+        display:none;
+    }
+
+    header nav {
+        margin: 0 auto;
+    }
+
+    #aboutTop {
+        flex-flow: column;
+    }
+
+    #what {
+        width: 80%;
+        text-align:center;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #aboutBottom {
+        /* margin-left: 30%; */
+        padding-right: 0;
+        flex-flow: column;
+        /* width: 50%; */
+    }
+
+    .mC {
+        margin: 0 auto;
+        /* width: 50%; */
+    }
+
+    .mC img {
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+        /* margin-left: 10%; */
+        /* display: none; */
+    }
+
+
+  }
+
+
+@media(max-width: 500px) {
+
+    footer {
+        display: none;
+    }
+  }
