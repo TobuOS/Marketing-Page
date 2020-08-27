@@ -44,6 +44,10 @@ p {
     font-size: 1rem;  
 }
 
+a, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -54,9 +58,7 @@ header {
     top: 0;
 }
 
-header h1 {
-    font-family: ;
-}
+
 header nav {
     display: flex;
     justify-content: space-evenly;
@@ -89,6 +91,10 @@ header nav #home{
     flex-direction: row;
     /* align-content: center; */
     border-style: 1px solid black;
+    }
+
+    a, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
     }
 
 #top {
@@ -153,6 +159,7 @@ header nav #home{
 
 #bottom {
     background-image: url('/assets/lined-paper-1280548_1280.jpg');
+    background-blend-mode: lighten;
     background-position: center;
     width: 80%;
     margin: 1.5% auto;
